@@ -20,7 +20,7 @@ assertEqual(result[0], 2);
 assertEqual(result[1], 3);
 
 const empty = [];
-assertEqual(tail(empty), 1);
+assertEqual(tail(empty).length, 0);
 
 const single = [1];
-assertEqual(tail(single), 1);
+assertEqual(tail(single).length, 0);
