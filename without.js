@@ -1,4 +1,13 @@
 const without = function (source, itemsToRemove) {
+  return source.filter((item) => {
+    return !itemsToRemove.includes(item)
+  })
+}
+
+
+
+/*
+const without = function (source, itemsToRemove) {
   const newArr = [];
   for (let i = 0; i < source.length; i++) {
     for (item of itemsToRemove) {
@@ -10,7 +19,7 @@ const without = function (source, itemsToRemove) {
   return newArr;
 };
 
-
+*/
 
 const eqArrays = function (arr1, arr2) {
   if (arr1.length !== arr2.length) {
@@ -32,7 +41,8 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-
+const result = without([1, 2, 3], [1]);
+assertArraysEqual(result, [2, 3]); // should pass
 
 without([1, 2, 3], [1]);
 
