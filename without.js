@@ -9,6 +9,7 @@ const without = function (source, itemsToRemove) {
     for (const item of itemsToRemove) {
       if (source[i] === item) {
         itemMatch = true;
+        // can use a break statement to bypass needing a variable since if auto checks for truey statement
       }
     }
     if (!itemMatch) {
