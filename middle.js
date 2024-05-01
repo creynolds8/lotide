@@ -17,7 +17,11 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log(`🔴🔴🔴 Assertion Failed: ${arr1} !== ${arr2}`);
   }
 };
-
+//more AI feedback
+//simplify first array length check
+//store Math.floor in variable to simplify
+//remove Math.floor from line lines 33 & 34 since midElement
+    //already has integer value
 const middle = function(arr) {
   const output = [];
   const midElement = arr.length / 2;
