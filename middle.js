@@ -19,18 +19,16 @@ const assertArraysEqual = function(arr1, arr2) {
 };
 
 const middle = function(arr) {
-  const input = arr;
-  const emptyArr = [];
   const output = [];
   const midElement = arr.length / 2;
   if (arr.length === 1 || arr.length === 2) {
-    return emptyArr;
+    return [];
   } else if (arr.length % 2 !== 0) {
-    output.push(input[Math.floor(midElement)]);
+    output.push(arr[Math.floor(midElement)]);
     return output;
   } else if (arr.length % 2 === 0) {
-    output.push(input[Math.floor(midElement - 1)]);
-    output.push(input[Math.floor(midElement)]);
+    output.push(arr[Math.floor(midElement - 1)],
+      arr[Math.floor(midElement)]);
     return output;
   }
 };
