@@ -18,8 +18,8 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 //create a function to flatten given arrays, assume only one level of nesting
-const flatten = function{
-  
+const flatten = function(arr){
+
 }
 
 flatten([1, 2, [3, 4], 5, [6]]); // -> [1, 2, 3, 4, 5, 6]
