@@ -24,3 +24,6 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log(`🔴🔴🔴 Assertion Failed: ${arr1} !== ${arr2}`)
   }
 };
+
+assertArraysEqual(middle([1]), []);
+assertArraysEqual(middle([1, 2]), []);
