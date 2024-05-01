@@ -1,6 +1,13 @@
 //create a function to flatten given arrays, assume only one level of nesting
 const flatten = function(arr) {
-  const flatArr = arr.flat();
+  const flatArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i]) === true) {
+      flatArr.push(...arr[i]);
+    } else {
+      flatArr.push(arr[i]);
+    }
+  }
   return flatArr;
 };
 
