@@ -7,8 +7,10 @@ const without = function (source, itemsToRemove) {
       }
     }
   }
-  console.log(newArr);
+  return newArr;
 };
+
+
 
 const eqArrays = function (arr1, arr2) {
   if (arr1.length !== arr2.length) {
@@ -29,6 +31,7 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log(`🔴🔴🔴 Assertion Failed: ${arr1} !== ${arr2}`)
   }
 };
+
 
 
 without([1, 2, 3], [1]);
