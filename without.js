@@ -6,7 +6,7 @@ const without = function (source, itemsToRemove) {
   const newArr = [];
   for (let i = 0; i < source.length; i++) {
     let itemMatch = false;
-    for (item of itemsToRemove) {
+    for (const item of itemsToRemove) {
       if (source[i] === item) {
         itemMatch = true;
       }
