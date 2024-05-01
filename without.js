@@ -1,25 +1,24 @@
-const without = function (source, itemsToRemove) {
-  return source.filter((item) => {
-    return !itemsToRemove.includes(item)
-  })
-}
 
 
 
-/*
+
 const without = function (source, itemsToRemove) {
   const newArr = [];
   for (let i = 0; i < source.length; i++) {
+    let itemMatch = false;
     for (item of itemsToRemove) {
-      if (source[i] !== item) {
-        newArr.push(source[i]);
+      if (source[i] === item) {
+        itemMatch = true;
       }
+    }
+    if (!itemMatch) {
+      newArr.push(source[i])
     }
   }
   return newArr;
 };
 
-*/
+
 
 const eqArrays = function (arr1, arr2) {
   if (arr1.length !== arr2.length) {
