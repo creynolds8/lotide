@@ -1,10 +1,3 @@
-const middle = function(arr) {
-  const emptyArr = [];
-  if (arr.length === 1 || arr.length === 2) {
-  return emptyArr;
-  }
-}
-
 const eqArrays = function (arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -22,6 +15,13 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log(`🟢🟢🟢 Assertion Passed: ${arr1} === ${arr2}`)
   } else {
     console.log(`🔴🔴🔴 Assertion Failed: ${arr1} !== ${arr2}`)
+  }
+};
+
+const middle = function(arr) {
+  const emptyArr = [];
+  if (arr.length === 1 || arr.length === 2) {
+  return emptyArr;
   }
 };
 
