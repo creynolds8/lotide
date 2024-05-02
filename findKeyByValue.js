@@ -6,7 +6,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+const findKeyByValue = function(obj) {
 
+};
 
 const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
