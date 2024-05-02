@@ -25,7 +25,9 @@ const eqObjects = function(obj1, obj2) {
     return false;
   } else {
     for (const key of arr1) {
-      if (obj1[key] !== obj2[key]) {
+      if (typeof obj1[key] === 'object' && typeof obj2[key] === 'object') {
+        eqArrays(obj1[key], obj2[key]);
+      } else if (obj1[key] !== obj2[key]) {
         return false;
       } else {
         return true;
