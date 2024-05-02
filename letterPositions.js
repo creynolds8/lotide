@@ -33,8 +33,18 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-const check1 = 'hello'
+const check1 = 'hello';
+const check2 = 'lighthouse labs is great';
+const check3 = 'the ones who live';
 
 assertArraysEqual(letterPositions(check1).h, [0]);
 assertArraysEqual(letterPositions(check1).e, [1]);
 assertArraysEqual(letterPositions(check1).l, [2, 3]);
+
+assertArraysEqual(letterPositions(check2).l, [0, 11]);
+assertArraysEqual(letterPositions(check2).i, [1, 16]);
+assertArraysEqual(letterPositions(check2).s, [8, 14, 17]);
+
+assertArraysEqual(letterPositions(check3).e, [2, 6, 16]);
+assertArraysEqual(letterPositions(check3).o, [4, 11]);
+assertArraysEqual(letterPositions(check3).v, [15]);
