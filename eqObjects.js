@@ -38,3 +38,20 @@ const longSleeveShirtObject = {
 
 assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
 assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
+
+const multiColourShirtObject = {
+  colours: ['red', 'blue'],
+  size: 'medium'
+};
+const anotherMultiColourShirtObject = {
+  size: 'medium',
+  colours: ['red', 'blue']
+};
+const longSleeveMultiColourShirtObject = {
+  size: 'medium',
+  colours: ['red', 'blue'],
+  sleeveLength: 'long'
+};
+
+assertEqual(eqObjects(multiColourShirtObject, anotherMultiColourShirtObject), true);
+assertEqual(eqObjects(multiColourShirtObject, longSleeveMultiColourShirtObject), false);
