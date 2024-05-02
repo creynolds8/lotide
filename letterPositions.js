@@ -1,6 +1,6 @@
 const letterPositions = function(sentence) {
   const results = {};
-
+  
   return results;
 };
 
@@ -24,11 +24,8 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-const checkHello = {
-  h: [0],
-  e: [1],
-  l: [2, 3],
-  o: [4]
-}
+const check1 = 'hello'
 
-assertArraysEqual(letterPositions('hello'), checkHello);
+assertArraysEqual(letterPositions(check1).h, [0]);
+assertArraysEqual(letterPositions(check1).e, [1]);
+assertArraysEqual(letterPositions(check1).l, [2, 3]);
