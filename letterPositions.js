@@ -23,3 +23,12 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log(`🔴🔴🔴 Assertion Failed: ${arr1} !== ${arr2}`)
   }
 };
+
+const checkHello = {
+  h: [0],
+  e: [1],
+  l: [2, 3],
+  o: [4]
+}
+
+assertArraysEqual(letterPositions('hello'), checkHello);
