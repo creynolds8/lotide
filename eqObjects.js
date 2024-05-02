@@ -12,7 +12,13 @@ const eqObjects = function(obj1, obj2) {
   if (arr1.length !== arr2.length) {
     return false;
   } else {
-
+    for (const key of arr1) {
+      if (obj1[key] !== obj2[key]) {
+        return false;
+      } else {
+        return true;
+      }
+    } 
   }
 };
 
