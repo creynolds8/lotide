@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -32,7 +32,7 @@ const eqObjects = function(obj1, obj2) {
       } else {
         return true;
       }
-    } 
+    }
   }
 };
 
