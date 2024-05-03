@@ -1,5 +1,12 @@
 const takeUntil = function(arr, callback) {
-
+  const output = [];
+  for (const e of arr) {
+    if (!callback(e)) {
+      output.push(e);
+    } else {
+      break;
+    }}
+  return output;
 };
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
