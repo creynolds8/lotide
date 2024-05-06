@@ -1,7 +1,3 @@
-
-
-
-
 const without = function (source, itemsToRemove) {
   const newArr = [];
   for (let i = 0; i < source.length; i++) {
@@ -19,8 +15,6 @@ const without = function (source, itemsToRemove) {
   return newArr;
 };
 
-
-
 const eqArrays = function (arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -35,9 +29,9 @@ const eqArrays = function (arr1, arr2) {
 
 const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
-    console.log(`🟢🟢🟢 Assertion Passed: ${arr1} === ${arr2}`)
+    console.log(`🟢🟢🟢 Assertion Passed: ${arr1} === ${arr2}`);
   } else {
-    console.log(`🔴🔴🔴 Assertion Failed: ${arr1} !== ${arr2}`)
+    console.log(`🔴🔴🔴 Assertion Failed: ${arr1} !== ${arr2}`);
   }
 };
 
@@ -48,4 +42,6 @@ without([1, 2, 3], [1]);
 
 const words = ["hello", "world", "lighthouse"];
 without(words,["lighthouse"]);
-assertArraysEqual(words, ["hello", "world", "lighthouse"])
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+
+module.exports = without;
