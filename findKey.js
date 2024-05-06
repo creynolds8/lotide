@@ -23,4 +23,4 @@ const starObject = {
 
 assertEqual(findKey(starObject, (x) => x.stars === 2), 'noma');
 
-
+module.exports = findKey;
