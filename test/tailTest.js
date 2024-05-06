@@ -1,17 +1,14 @@
 const tail = require('../tail');
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert
 
-const nums = [1, 2, 3];
-tail(nums);
-assertEqual(nums.length, 3);
-
-const result = tail([1, 2, 3]);
-assertEqual(result.length, 2);
-assertEqual(result[0], 2);
-assertEqual(result[1], 3);
-
-const empty = [];
-assertEqual(tail(empty).length, 0);
-
-const single = [1];
-assertEqual(tail(single).length, 0);
+describe('#tail', () => {
+  it('return the tail of a given array', () => {
+    assert.deepEqual(tail([1, 2, 3]), [2, 3]);
+  });
+  it('return empty array when given empty array',() => {
+    assert.deepEqual(tail([]), []);
+  });
+  it('return an empty array when given a array with one element', () => {
+    assert.deepEqual(tail([1]), []);
+  });
+});
