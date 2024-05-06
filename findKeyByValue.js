@@ -36,3 +36,5 @@ const check1 = {
 
 assertEqual(findKeyByValue(check1, 2), "b")
 assertEqual(findKeyByValue(check1, 7), undefined)
+
+module.exports = findKeyByValue;
