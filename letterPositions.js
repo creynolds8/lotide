@@ -48,3 +48,5 @@ assertArraysEqual(letterPositions(check2).s, [8, 14, 17]);
 assertArraysEqual(letterPositions(check3).e, [2, 6, 16]);
 assertArraysEqual(letterPositions(check3).o, [4, 11]);
 assertArraysEqual(letterPositions(check3).v, [15]);
+
+module.exports = letterPositions;
