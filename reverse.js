@@ -10,3 +10,5 @@ const reverse = function(arr) {
 
 const arr = process.argv.slice(2);
 let newStr = reverse(arr);
+
+module.exports = reverse;
