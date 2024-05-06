@@ -27,3 +27,5 @@ const check3 = countLetters('ccccccccan');
 assertEqual(check1['l'], 2);
 assertEqual(check2['s'], 3);
 assertEqual(check3['c'], 8);
+
+module.exports = countLetters;
