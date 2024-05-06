@@ -42,3 +42,5 @@ assertObjectsEqual({ a: 1, b: 2, c: 3 }, { a: 1, b: 2, c: 3 });
 assertObjectsEqual({ a: 1, b: 2, c: 4 }, { a: 1, b: 2, c: 3 });
 assertObjectsEqual({ a: 1, b: [2, 3], c: 4}, {a: 1, b: [2, 3], c: 4});
 assertObjectsEqual({ a: 1, b: [2, 3], c: 5}, {a: 1, b: [2, 3], c: 4});
+
+module.exports = assertObjectsEqual;
