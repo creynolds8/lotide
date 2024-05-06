@@ -34,3 +34,4 @@ assertArraysEqual(map(test1, (word) => word[0]), ['a', 'b', 'c', 'd']);
 assertArraysEqual(map(test2, (word) => word[0]), ['b', 'j', 'j', 'r']);
 assertArraysEqual(map(test3, (word) => word[0]), ['1', '1', '1', '1',]);
 
+module.exports = map;
