@@ -55,6 +55,6 @@ describe('#countLetters', () => {
     assert.deepEqual((countLetters('Hi hello')), check3);
   });
   it('return object with key value pairs as above, including punctuation', () => {
-    assert.deepEqual((countLetters('hello, Cameron.')), check4)
+    assert.deepEqual((countLetters('hello, Cameron.')), check4);
   });
 });
