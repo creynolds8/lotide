@@ -39,15 +39,9 @@ describe('#eqObjects', () => {
     assert.isFalse(eqObjects(shirtObject, longSleeveShirtObject));
   });
   it('return true if objects match even if some values are arrays provided arrays are equal', () => {
-    assert.isTrue(eqObjects(multiColourShirtObject, anotherMultiColourShirtObject))
+    assert.isTrue(eqObjects(multiColourShirtObject, anotherMultiColourShirtObject));
   });
   it('return false when objects are not equal, includes array values', () => {
-    assert.isFalse(eqObjects(multiColourShirtObject, longSleeveMultiColourShirtObject))
+    assert.isFalse(eqObjects(multiColourShirtObject, longSleeveMultiColourShirtObject));
   });
 });
-
-
-
-
-// assertEqual(eqObjects(multiColourShirtObject, anotherMultiColourShirtObject), true);
-// assertEqual(eqObjects(multiColourShirtObject, longSleeveMultiColourShirtObject), false);
