@@ -18,22 +18,22 @@ const flatten = require('./flatten');
 //---------------------------------------------------------//
 
 const lotide = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  assertArraysEqual: assertArraysEqual,
-  assertEqual: assertEqual,
-  assertObjectsEqual: assertObjectsEqual,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  eqArrays: eqArrays,
-  eqObjects: eqObjects,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  letterPositions: letterPositions,
-  takeUntil: takeUntil,
-  without: without,
-  flatten: flatten,
+  head,
+  tail,
+  middle,
+  assertArraysEqual,
+  assertEqual,
+  assertObjectsEqual,
+  countLetters,
+  countOnly,
+  eqArrays,
+  eqObjects,
+  findKey,
+  findKeyByValue,
+  letterPositions,
+  takeUntil,
+  without,
+  flatten,
 };
 
 module.exports = lotide;
