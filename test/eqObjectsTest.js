@@ -25,6 +25,11 @@ const anotherMultiColourShirtObject = {
   colours: ['red', 'blue']
 };
 
+const differentMultiColourShirtObject = {
+  size: 'medium',
+  colours: ['blue', 'red']
+};
+
 const longSleeveMultiColourShirtObject = {
   size: 'medium',
   colours: ['red', 'blue'],
@@ -43,5 +48,8 @@ describe('#eqObjects', () => {
   });
   it('return false when objects are not equal, includes array values', () => {
     assert.isFalse(eqObjects(multiColourShirtObject, longSleeveMultiColourShirtObject));
+  });
+  it('return false if any array values are different', () => {
+    assert.isFalse(eqObjects(multiColourShirtObject, differentMultiColourShirtObject));
   });
 });
