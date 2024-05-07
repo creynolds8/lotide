@@ -13,6 +13,7 @@ const findKeyByValue = require('./findKeyByValue');
 const letterPositions = require('./letterPositions');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
+const flatten = require('./flatten');
 
 //---------------------------------------------------------//
 
@@ -32,6 +33,7 @@ const lotide = {
   letterPositions: letterPositions,
   takeUntil: takeUntil,
   without: without,
+  flatten: flatten,
 };
 
 module.exports = lotide;
