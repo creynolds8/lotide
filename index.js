@@ -10,9 +10,7 @@ const eqArrays = require('./eqArrays');
 const eqObjects = require('./eqObjects');
 const findKey = require('./findKey');
 const findKeyByValue = require('./findKeyByValue');
-const flatten = require('./flatten');
 const letterPositions = require('./letterPositions');
-const reverse = require('./reverse');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
 
@@ -31,9 +29,7 @@ const lotide = {
   eqObjects: eqObjects,
   findKey: findKey,
   findKeyByValue: findKeyByValue,
-  flatten: flatten,
   letterPositions: letterPositions,
-  reverse: reverse,
   takeUntil: takeUntil,
   without: without,
 };
