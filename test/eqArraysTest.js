@@ -14,8 +14,7 @@ describe('#eqArray', () => {
   it('return true when given two empty arrays', () =>
     assert.isTrue(eqArrays([], [])
     ));
-    it('return true when arrays are the same length and all elements are equal', () =>
+  it('return true when arrays are the same length and all elements are equal', () =>
     assert.isTrue(eqArrays([1, 2, 3], [1, 2, 3])
-  ))
-
+    ));
 });
